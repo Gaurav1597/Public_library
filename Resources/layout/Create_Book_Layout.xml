@@ -1,0 +1,136 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/image5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:text=" CREATE BOOK"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="ID"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_v_book_id"
+            android:gravity="center_horizontal"
+            android:visibility="invisible"  />
+
+        <TextView
+            android:text="CID"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_category_id"
+            android:gravity="center_horizontal"
+            android:visibility="invisible"  />
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_show_category"
+            android:minHeight="10dp" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_book"
+            android:hint="Name"
+            app:backgroundTint="@android:color/background_light"
+            android:textColor="@android:color/background_light"
+            android:textColorHint="@android:color/background_light" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_price"
+            android:hint="Price"
+            android:textColor="@android:color/background_light"
+            android:textColorHint="@android:color/background_light" />
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_show_book"
+            android:minHeight="10dp"
+            android:background="@android:color/background_light" />
+
+
+
+
+
+
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView1"
+            android:visibility="invisible" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:text="New"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_new_book"
+                    android:background="@android:color/holo_blue_dark" />
+
+                <Button
+                    android:text="Save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_save_book"
+                    android:background="@android:color/holo_blue_bright" />
+
+                <Button
+                    android:text="Update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_update_book"
+                    android:background="@android:color/holo_blue_dark" />
+                <Button
+                    android:text="Delet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_delete_book"
+                    android:background="@android:color/holo_blue_bright" />
+            </TableRow>
+        </TableLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

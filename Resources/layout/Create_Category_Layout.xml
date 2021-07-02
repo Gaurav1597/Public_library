@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/image6">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:text="Book Types"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:gravity="center_horizontal"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="ID"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_v_category_id"
+            android:gravity="center_horizontal"
+            android:visibility="invisible"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_category"
+            android:hint="Book Type"
+            android:background="@android:color/background_light" />
+
+        <Button
+            android:text="Save Book Type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_save_category"
+            android:background="@android:color/holo_blue_dark" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_show"
+            android:minHeight="10dp"
+            android:background="@android:color/background_light" />
+
+        <Button
+            android:text="Delete Book Type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_delete_category"
+            android:background="@android:color/holo_blue_bright" />
+
+        <Button
+            android:text="Modified Book Type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_update_category"
+            android:background="@android:color/holo_blue_dark" />
+
+        <Button
+            android:text="NEW BOOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_new_category"
+            android:background="@android:color/holo_blue_bright" />
+
+    </LinearLayout>
+</RelativeLayout>
